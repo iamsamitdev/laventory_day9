@@ -24,7 +24,7 @@ export default function Edit({ auth, user }: EditProps) {
   )
 
   const { data, setData, post, errors, processing } = useForm({
-    _method: 'PUT',
+    _method: 'PATCH',
     name: user.name || '',
     email: user.email || '',
     phone: user.phone || '',
